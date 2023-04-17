@@ -10,7 +10,7 @@
 
 <body>
     <h1>Form</h1>
-    <form action="">
+    <form action="/bag">
         <p>
             <label for="username">Enter the username: </label>
             <input id="username" type="text" placeholder="username">
@@ -27,7 +27,18 @@
             <label for="age">Enter your age: </label>
             <input id="age" type="number" placeholder="age">
         </p>
+        <!-- This won't submit the form because of type attribute -->
+        <button type="button">Dummy Button</button>
+        <br>
+        <!-- This submit the form -->
+        <button>Submit</button>
+        <br>
+        <!-- This submit the form -->
+        <input type="submit" value="Click">
     </form>
+    <hr>
+    <!-- Outdide of the form no default behaviour -->
+    <button>Outside Form</button>
 </body>
 
 </html>
